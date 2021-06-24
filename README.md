@@ -1,6 +1,6 @@
 # CCKS-2021-event-detection
 
-Currently we only offer Baseline model on [CCKS 2021：通用细粒度事件检测](https://www.biendata.xyz/competition/ccks_2021_maven/).  F1-score is at least 0.68.
+We only offer baseline model on [CCKS 2021：通用细粒度事件检测](https://www.biendata.xyz/competition/ccks_2021_maven/).  F1-score is at least 0.68.
 
 This code is the implementation for [DMBERT](https://www.aclweb.org/anthology/N19-1105/) model. The implementations are based on [Huggingface's Transformers](https://github.com/huggingface/transformers), especially its example for the multiple-choice task.
 
