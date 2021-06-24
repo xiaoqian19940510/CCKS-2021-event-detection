@@ -1,7 +1,8 @@
 # CCKS-2021-event-detection
 
-This code is the implementation for [DMBERT](https://www.aclweb.org/anthology/N19-1105/) model. The implementations are based on [Huggingface's Transformers](https://github.com/huggingface/transformers), especially its example for the multiple-choice task.
+Currently we only offer Baseline model on [CCKS 2021：通用细粒度事件检测](https://www.biendata.xyz/competition/ccks_2021_maven/).  F1-score is at least 0.68.
 
+This code is the implementation for [DMBERT](https://www.aclweb.org/anthology/N19-1105/) model. The implementations are based on [Huggingface's Transformers](https://github.com/huggingface/transformers), especially its example for the multiple-choice task.
 
 
 ## Requirements
@@ -21,12 +22,11 @@ This code is the implementation for [DMBERT](https://www.aclweb.org/anthology/N1
 ### On MAVEN:
 
 1. Download MAVEN data files.
-2. Run ```run_MAVEN.sh``` for training and evaluation on the devlopment set.  
-3. Run ```run_MAVEN_infer.sh``` to get predictions on the test set (dumped to ```results.jsonl```).
+2. Run ```main.slurm``` for training and evaluation on the devlopment set, and geting predictions on the test set (dumped to ```results.jsonl```).
 
 See the two scripts for more details.
 
 ### On ACE
 
 1. Preprocess ACE 2005 dataset as in [this repo](https://github.com/thunlp/HMEAE).
-2. Run ``run_ACE.sh`` for training and evaluation.
+2. Run ``main.slurm`` for training and evaluation.
